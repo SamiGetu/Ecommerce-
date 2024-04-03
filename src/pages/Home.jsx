@@ -3,11 +3,11 @@ import hero from "../assets/image/hero.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Services from "../Services/Services";
+import Services from "../components/Services";
 import ProductsList from "../components/UI/ProductsList";
 import Products from "../Data/Products/Products";
 import Clock from "../components/UI/Clock";
-import craft from "../assets/image/craft.png";
+import nake from "../assets/image/nake3.png";
 
 const Home = () => {
   const year = new Date().getFullYear();
@@ -67,12 +67,12 @@ const Home = () => {
     <>
       <div className=" overflow-hidden">
         <Helmet title={"Home"}>
-          <section className="flex flex-wrap justify-evenly bg-blue-100 items-center">
+          <section className="flex flex-wrap justify-evenly bg-gray-200 items-center">
             <div className="space-y-5 px-10 py-10 md:w-[50%] mt-20">
               <p className="md:text-lg text-sm text-gray-500 font-medium">
                 Tranding Products in {year}
               </p>
-              <h2 className="text-5xl font-semibold text-[#0c0c2e]">
+              <h2 className="text-5xl font-semibold text-neutral-800">
                 Modernize your interior with our sleek wall paint
               </h2>
               <p className="text-lg text-gray-500 font-medium ">
@@ -82,7 +82,7 @@ const Home = () => {
               </p>
               <motion.button
                 whileTap={{ scale: 1.2 }}
-                className="px-10 py-3 bg-[#0c0c2e] text-white  rounded-lg"
+                className="px-10 py-3 bg-green-600 text-white  rounded-lg"
               >
                 <Link to={"shop"}>SHOP NOW</Link>
               </motion.button>
@@ -94,21 +94,21 @@ const Home = () => {
           </div>
           {/*Tranding Products*/}
           <section className="mt-24">
-            <h2 className="text-6xl font-serif  text-[#0c0c2e] font-medium text-center">
+            <h2 className="text-6xl font-serif  text-green-900 font-medium text-center">
               Tranding Products
             </h2>
             <ProductsList data={trendingProducts} />
           </section>
           {/* Best Selling Products */}
           <section className="mt-24">
-            <h3 className="text-6xl font-serif  text-[#0c0c2e] font-medium text-center">
+            <h3 className="text-6xl font-serif  text-green-900 font-medium text-center">
               Best Sales
             </h3>
             <ProductsList data={bestSelling} />
           </section>
           {/*Time Counter*/}
-          <section className="flex flex-wrap justify-center 2xl:gap-[30rem] gap-0 items-center mt-[10rem] bg-[#162a52] ">
-            <div className="text-white pt-10 md:text-start text-center">
+          <section className="flex flex-wrap justify-center 2xl:gap-[30rem] gap-0 items-center mt-[10rem] bg-green-100">
+            <div className="text-black pt-10 md:text-start text-center">
               <h4 className="text-lg font-medium">Limited Offers</h4>
               <h3 className="text-4xl font-medium">Ring</h3>
               <div className="flex flex-wrap  mt-10 gap-20">
@@ -120,17 +120,17 @@ const Home = () => {
               <span>
                 <motion.button
                   whileTap={{ scale: 1.2 }}
-                  className="px-10 py-2 bg-white text-black font-bold rounded-lg mt-[5rem]"
+                  className="px-10 py-2 bg-green-600 text-white font-bold rounded-lg mt-[5rem]"
                 >
                   <Link to={"shop"}>Visit Store</Link>
                 </motion.button>
               </span>
             </div>
-            <img src={craft} alt="" />
+            <img className="md:w-[30%] w-full" src={nake} alt="" />
           </section>
           {/* New Arivales */}
           <section className="mt-24">
-            <h2 className="text-6xl font-serif  text-[#0c0c2e] font-medium text-center">
+            <h2 className="text-6xl font-serif  text-green-900 font-medium text-center">
               New Arivales
             </h2>
             <ProductsList data={newArived} />

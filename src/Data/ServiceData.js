@@ -1,27 +1,21 @@
 const ServiceData = [
   {
-    icone: "images/truck.svg",
-    title: "FreeShiping",
-    subtiltle: "Lorem ipsum dolor sit amet.",
-    bgColor: "bg-red-200",
-  },
-  {
     icone: "images/return.svg",
     title: "Easy Returns",
     subtiltle: "Lorem ipsum dolor sit amet.",
-    bgColor: "bg-blue-200",
+    bgColor: "bg-green-100 shadow-xl",
   },
   {
     icone: "images/secure.svg",
     title: "Secure Payment",
     subtiltle: "Lorem ipsum dolor sit amet.",
-    bgColor: "bg-green-200",
+    bgColor: "bg-green-100 shadow-xl",
   },
   {
-    icone: "images/money.svg",
+    icone: "images/wallet.svg",
     title: "Money Back Gurantee",
     subtiltle: "Lorem ipsum dolor sit amet.",
-    bgColor: "bg-purple-200",
+    bgColor: "bg-green-100 shadow-xl",
   },
 ];
 export default ServiceData;

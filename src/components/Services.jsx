@@ -10,7 +10,7 @@ const Services = () => {
             whileHover={{ scale: 1.1 }}
           >
             <div className="flex gap-3">
-              <span className="w-[4rem] h-[4rem] bg-[#111143] flex justify-center rounded-full">
+              <span className="w-[4rem] h-[4rem] bg-green-800 flex justify-center rounded-full">
                 <img
                   width={"50px"}
                   className="text-white"

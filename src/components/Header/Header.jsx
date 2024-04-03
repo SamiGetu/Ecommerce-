@@ -73,7 +73,7 @@ const Header = () => {
             </div>
           )}
           <div className="flex absolute xl:left-20 left-2 pt-5   cursor-pointer">
-            <div className="text-2xl font-bold text-[#0c0c2e]">
+            <div className="text-2xl font-bold text-green-600">
               <h1>Logo</h1>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Header = () => {
             <div className="flex space-x-10 absolute xl:right-[15rem] right-[4rem] top-6">
               <span>
                 <FaShoppingBag size={"1.3rem"} />
-                <p className="absolute top-[-1rem] ml-3 text-center px-2 text-[14px] bg-black  text-white font-bold rounded-full">
+                <p className="absolute top-[-1rem] ml-3 text-center px-2 text-[14px] bg-green-600 text-white font-bold rounded-full">
                   {totalQuantity}
                 </p>
               </span>

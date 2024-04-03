@@ -44,7 +44,7 @@ const Shop = () => {
         <div className="flex flex-wrap lg:justify-center justify-start lg:pl-0 pl-10 lg:gap-[6rem] gap-10 mt-[5rem]">
           <div>
             <select
-              className="px-10 py-2 bg-[#09092c] text-white rounded-lg"
+              className="px-10 py-2 bg-green-800 text-white rounded-lg"
               onChange={handleFiliter}
             >
               <option>Filter By Catagory</option>

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Redux/slices/cartslice";
 import { FaCirclePlus } from "react-icons/fa6";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { toast } from "react-toastify";
-import Rating from "../Rating/Rating";
 
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();
@@ -29,11 +29,9 @@ const ProductCard = ({ item }) => {
           <motion.div whileHover={{ scale: 0.9 }}>
             <img key={item.id} src={item.ProductsImage} alt="" />
           </motion.div>
-          <div>
-            <Rating />
-          </div>
-          <h3 className="text-2xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium hover:text-blue-700">
-            <Link to={`/shop/${item.id}`}>{item.title}</Link>
+
+          <h3 className="text-2xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium hover:text-green-700">
+            {item.title}
           </h3>
           <span className="text-md font-medium">{item.type}</span>
           <div className="text-md font-medium flex justify-between items-center gap-2 w-[75%]">
@@ -42,12 +40,22 @@ const ProductCard = ({ item }) => {
             <span>
               <FaCirclePlus
                 size={"2rem"}
-                className="text-[#0b0b31] active:scale-110"
+                className="text-green-900 active:scale-110"
                 whileTap={{ scale: 1.2 }}
                 onClick={addToCart}
               />
             </span>
           </div>
+
+          <span>
+            <Link to={`/shop/${item.id}`}>
+              {" "}
+              <FaLongArrowAltRight
+                className="text-green-800 hover:pl-10 duration-500"
+                size={"2rem"}
+              />
+            </Link>
+          </span>
         </div>
       </>
     </>
