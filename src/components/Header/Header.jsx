@@ -101,7 +101,9 @@ const Header = () => {
             {/* icons */}
             <div className="flex space-x-10 absolute xl:right-[15rem] right-[4rem] top-6">
               <span>
-                <FaShoppingBag size={"1.3rem"} />
+                <Link to={"/cart"}>
+                  <FaShoppingBag size={"1.3rem"} />
+                </Link>
                 <p className="absolute top-[-1rem] ml-3 text-center px-2 text-[14px] bg-green-600 text-white font-bold rounded-full">
                   {totalQuantity}
                 </p>
