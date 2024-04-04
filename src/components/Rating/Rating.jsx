@@ -1,8 +1,5 @@
-import { useState } from "react";
-
-const Rating = () => {
-  const [rating, setRating] = useState(0);
-
+/* eslint-disable react/prop-types */
+const Rating = ({ rating, setRating }) => {
   const handleStarClick = (index) => {
     setRating(index + 1);
   };

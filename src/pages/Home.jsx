@@ -82,7 +82,7 @@ const Home = () => {
               </p>
               <motion.button
                 whileTap={{ scale: 1.2 }}
-                className="px-10 py-3 bg-green-600 text-white  rounded-lg"
+                className="px-10 py-3 bg-green-950 text-white  rounded-lg"
               >
                 <Link to={"shop"}>SHOP NOW</Link>
               </motion.button>

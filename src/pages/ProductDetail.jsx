@@ -12,6 +12,7 @@ import { cartActions } from "../Redux/slices/cartslice";
 import { toast } from "react-toastify";
 
 const ProductDetail = () => {
+  const [rating, setRating] = useState(0);
   const reviewUser = useRef("");
   const reviewMessage = useRef("");
   const dispatch = useDispatch();
@@ -52,11 +53,14 @@ const ProductDetail = () => {
 
     const reviewUserName = reviewUser.current.value;
     const reviewUserMessage = reviewMessage.current.value;
+    console.log(reviewUserName, reviewUserMessage, rating);
+
+    toast.success("Succssfully Submited");
   };
 
   return (
     <>
-      <Helmet>
+      <Helmet title="ProductDetails">
         <section>
           <CommonSection title={"Detail"} />
           <div className="flex flex-wrap justify-center items-center mt-10">
@@ -73,7 +77,7 @@ const ProductDetail = () => {
               <div className="text-2xl font-medium pb-5">{Price}</div>
               <motion.button
                 whileTap={{ scale: 1.1 }}
-                className="px-10 py-2 font-medium text-white bg-green-800 rounded-md"
+                className="px-10 py-2 font-medium text-white bg-green-950 rounded-md"
                 onClick={addToCart}
               >
                 Add to Cart
@@ -126,7 +130,7 @@ const ProductDetail = () => {
                   </div>
                   <div>
                     <span>
-                      <Rating className="text-2xl" />
+                      <Rating rating={rating} setRating={setRating} />
                     </span>
                   </div>
                   <div>
@@ -139,7 +143,7 @@ const ProductDetail = () => {
                   </div>
                   <input
                     type="submit"
-                    className="bg-green-600 text-white font-medium px-10 py-2"
+                    className="bg-green-950 rounded-md text-white font-medium px-10 py-2"
                   />
                 </form>
               </div>

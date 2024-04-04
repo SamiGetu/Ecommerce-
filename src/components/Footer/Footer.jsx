@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-green-800 py-10 hover:py-20 duration-500">
+      <footer className="bg-green-950 py-10 hover:py-20 duration-500">
         <div>
           <div className=" space-y-[3rem]">
             <div className="flex text-2xl text-white   gap-5 mt-4 justify-center items-center sm:mt-0 space-x-3">

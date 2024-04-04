@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Redux/slices/cartslice";
 import { FaCirclePlus } from "react-icons/fa6";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaAnglesRight } from "react-icons/fa6";
 import { toast } from "react-toastify";
 
 const ProductCard = ({ item }) => {
@@ -49,11 +49,9 @@ const ProductCard = ({ item }) => {
 
           <span>
             <Link to={`/shop/${item.id}`}>
-              {" "}
-              <FaLongArrowAltRight
-                className="text-green-800 hover:pl-10 duration-500"
-                size={"2rem"}
-              />
+              <button className="text-md font-medium px-7 py-2 bg-green-950 text-white rounded-md text-center ">
+                View More
+              </button>
             </Link>
           </span>
         </div>
