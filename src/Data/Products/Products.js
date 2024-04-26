@@ -22,7 +22,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "TrandingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -38,7 +38,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "TrandingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -54,7 +54,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "TrandingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -70,7 +70,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "TrandingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -86,7 +86,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "NewArived",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -102,7 +102,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "NewArived",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -118,7 +118,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "NewArived",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -134,7 +134,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "NewArived",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -150,7 +150,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -166,7 +166,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -182,7 +182,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -198,7 +198,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -214,7 +214,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -230,7 +230,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -246,7 +246,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,
@@ -262,7 +262,7 @@ const Products = [
     shortDesc:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur officiis magnam minima aperiam laudantium ex? Numquam architectolibero sint ab.",
     Categories: "SellingProducts",
-    Price: "$299",
+    Price: 299,
     reviews: [
       {
         rating: 4.7,

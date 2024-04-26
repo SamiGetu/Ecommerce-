@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
         <h1 className="text-white text-md font-medium flex justify-center p-[3.5rem]">
-          Copyright 2024 Website By Sami
+          Copyright 2024 Website By Amare
         </h1>
       </footer>
     </>

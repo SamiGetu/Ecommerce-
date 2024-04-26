@@ -4,7 +4,7 @@ const CommonSection = ({ title }) => {
     <>
       <div>
         <div className="h-[30vh] bg-[url('/images/section.jpg')] bg-cover bg-center">
-          <h2 className="text-5xl text-white text-center font-bold pt-[10rem]">
+          <h2 className="text-5xl text-white text-center font-bold pt-[5rem]">
             {title}
           </h2>
         </div>

@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { FaShoppingBag } from "react-icons/fa";
-import { HiMiniXMark } from "react-icons/hi2";
+import { HiX } from "react-icons/hi";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
@@ -12,15 +12,14 @@ const Links = [
 ];
 
 const Header = () => {
-  const totalQuantity = useSelector((state) => state.cart.totalQuanitity);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
 
-  const [activeLink, setActiveLink] = useState(false);
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
-
-  const [change, setchange] = useState(false);
   const [open, setOpen] = useState(false);
+  const [change, setchange] = useState(false);
+
+  const handleLinkClick = () => {
+    setOpen(false); // Close the dropdown menu when a link is clicked
+  };
 
   const ChangeColor = () => {
     if (window.scrollY >= 80) {
@@ -53,26 +52,27 @@ const Header = () => {
           }`}
         >
           {open && (
-            <div>
-              <div className="bg-black/50 absolute h-[70vh] w-full backdrop-blur-[7px]  pt-20 z-10">
-                <span className="absolute right-20">
-                  <HiMiniXMark
-                    size={"3rem"}
-                    className=" cursor-pointer bg-black text-white px-2 rounded-full"
-                    onClick={() => setOpen(false)}
-                  />
-                </span>
-                {Links.map((item) => (
-                  <>
-                    <ul className="text-4xl text-white font-bold text-center mt-[3rem]">
-                      <Link to={item.Path}>{item.Name}</Link>
-                    </ul>
-                  </>
-                ))}
-              </div>
+            <div className="bg-black/50 absolute h-[70vh] w-full backdrop-blur-[7px]  pt-20 z-10">
+              <span className="absolute right-20">
+                <HiX
+                  size={"3rem"}
+                  className="cursor-pointer bg-black text-white px-2 rounded-full"
+                  onClick={() => setOpen(false)}
+                />
+              </span>
+              {Links.map((item) => (
+                <div
+                  key={item.Name}
+                  className="text-4xl text-white font-bold text-center mt-[3rem]"
+                >
+                  <Link to={item.Path} onClick={handleLinkClick}>
+                    {item.Name}
+                  </Link>
+                </div>
+              ))}
             </div>
           )}
-          <div className="flex absolute xl:left-20 left-2 pt-5   cursor-pointer">
+          <div className="flex absolute xl:left-20 left-2 pt-5 cursor-pointer">
             <div className="text-2xl font-bold text-green-600">
               <h1>Logo</h1>
             </div>
@@ -80,22 +80,17 @@ const Header = () => {
           <div className="flex justify-evenly items-center gap-10 pt-5">
             {/* links */}
             <div className="flex justify-center gap-6">
-              {Links.map((link, index) => (
-                <>
-                  <ul className="text-lg text-gray-500 font-medium md:block hidden cursor-pointer">
-                    <li
-                      key={index}
-                      className={`nav-link ${
-                        activeLink === link.Name
-                          ? "text-[#0c0c2e] font-bold"
-                          : ""
-                      }`}
-                      onClick={() => handleLinkClick(link.Name)}
-                    >
-                      <NavLink to={link.Path}>{link.Name}</NavLink>
-                    </li>
-                  </ul>
-                </>
+              {Links.map((link) => (
+                <ul
+                  key={link.Name}
+                  className="text-lg text-gray-500 font-medium md:block hidden cursor-pointer"
+                >
+                  <li className={`nav-link`}>
+                    <NavLink to={link.Path} onClick={handleLinkClick}>
+                      {link.Name}
+                    </NavLink>
+                  </li>
+                </ul>
               ))}
             </div>
             {/* icons */}
